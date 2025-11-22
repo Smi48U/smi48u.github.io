@@ -1,0 +1,6 @@
+# Sample tickers for HRP demo
+SPY
+TLT
+GLD
+QQQ
+EEM

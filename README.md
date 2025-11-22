@@ -56,6 +56,28 @@ I designed the structure, wrote the content, and used ChatGPT to assist with:
 
 ---
 
+## 🧮 Terminalowy program HRP (Hierarchical Risk Parity)
+
+Repo zawiera prosty skrypt terminalowy `hrp_cli.py`, który pobiera listę tickerów z pliku tekstowego, ściąga dane z Yahoo Finance i drukuje wagi HRP.
+
+### Uruchomienie
+
+1. Zainstaluj zależności:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Przygotuj plik z tickerami (po jednym na linię). Przykład: `tickers_example.txt`.
+3. Uruchom skrypt:
+   ```bash
+   python hrp_cli.py --tickers-file tickers_example.txt --start 2018-01-01
+   ```
+
+Opcje dodatkowe:
+- `--end YYYY-MM-DD` – opcjonalna data końcowa (domyślnie do dziś),
+- `--method {ward,single,average,complete}` – metoda klasteryzacji do HRP (domyślnie `ward`).
+
+---
+
 ## 📖 Live Site
 
 [https://smi48u.github.io](https://smi48u.github.io)
